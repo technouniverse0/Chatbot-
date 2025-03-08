@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tecqsa Chatbot</title>
+  <!-- Using Google Fonts for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1>Tecqsa Chatbot</h1>
+      <p>Your intelligent assistant for document insights</p>
+    </header>
+    <div class="chat-content">
+      <div class="chat-messages">
+        {% if query %}
+          <div class="message user-message">
+            <div class="message-text">{{ query }}</div>
+          </div>
+        {% endif %}
+        {% if response %}
+          <div class="message bot-message">
+            <div class="message-text">{{ response }}</div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="chat-input-container">
+      <form method="POST" action="/">
+        <input type="text" name="query" placeholder="Ask your question..." autocomplete="off" required>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

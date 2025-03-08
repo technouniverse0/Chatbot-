@@ -1,0 +1,12 @@
+flask
+flask-cors
+pymongo
+langchain
+openai
+tiktoken
+sentence-transformers
+chromadb
+pydantic
+python-dotenv
+gunicorn
+requests
