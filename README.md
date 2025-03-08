@@ -54,14 +54,4 @@ The chatbot leverages **OpenAI's GPT models** for generating responses based on 
 4. **LLM Integration** – Uses OpenAI/Hugging Face models for response generation.
 5. **Frontend UI** – Provides an interface for user interaction.
 
----
-
-## 🚀 Next Steps
-- Learn about **vector databases** for efficient retrieval.
-- Experiment with **different LLMs**.
-- Deploy the chatbot using **Docker and cloud platforms**.
-
----
-
-This document provides an overview of the **technical stack and workflow** behind a Flask-based RAG chatbot. Happy learning! 🚀
 
